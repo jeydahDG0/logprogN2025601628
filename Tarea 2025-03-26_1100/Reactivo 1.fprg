@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="donas"/>
+        <attribute name="authors" value="adriana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-24 10:56:18 p. m."/>
+        <attribute name="created" value="YWRyaWFuYTtKRVNTRTsyMDI1LTAzLTI0OzA5OjI5OjMxIHAuIG0uOzI1NzI="/>
+        <attribute name="edited" value="YWRyaWFuYTtKRVNTRTsyMDI1LTAzLTI0OzEwOjU2OjE4IHAuIG0uOzM7MjY3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Pz, pre, desc1, desc2, d1, d2, d3" type="Real" array="False" size=""/>
+            <assign variable="pre" expression="10.00"/>
+            <assign variable="desc1" expression="1.00"/>
+            <assign variable="desc2" expression="2.00"/>
+            <output expression="&quot;&#191;Cuantas donas planea llevarse?&quot;" newline="True"/>
+            <input variable="Pz"/>
+            <if expression="Pz &gt;= 50">
+                <then>
+                    <output expression="&quot;Su precio a pagar por la donas sera: $&quot;" newline="True"/>
+                    <assign variable="d1" expression="(pre - desc2 )* Pz"/>
+                    <output expression="d1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Pz &gt;= 30">
+                        <then>
+                            <output expression="&quot;Su precio a pagar por la donas sera: $&quot;" newline="True"/>
+                            <assign variable="d2" expression="(pre - desc1 )* Pz"/>
+                            <output expression="d2" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Pz &lt; 30">
+                                <then>
+                                    <output expression="&quot;Su precio a pagar por la donas sera: $&quot;" newline="True"/>
+                                    <assign variable="d3" expression="pre * Pz"/>
+                                    <output expression="d3" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
