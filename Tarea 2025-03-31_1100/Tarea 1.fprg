@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea 1"/>
+        <attribute name="authors" value="adriana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-30 06:24:50 p. m."/>
+        <attribute name="created" value="YWRyaWFuYTtKRVNTRTsyMDI1LTAzLTMwOzA0OjQ2OjIyIHAuIG0uOzI1NjM="/>
+        <attribute name="edited" value="YWRyaWFuYTtKRVNTRTsyMDI1LTAzLTMwOzA2OjI0OjUwIHAuIG0uOzM7MjY3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Ini, Sx" type="String" array="False" size=""/>
+            <output expression="&quot;&#191;Letra inicial (A-Z)?&quot;" newline="True"/>
+            <input variable="Ini"/>
+            <output expression="&quot;&#191;Cual es tu sexo? (+)Hombre, (-)Mujer&quot;" newline="True"/>
+            <input variable="Sx"/>
+            <if expression="(Sx == &quot;-&quot; and Ini &lt;= &quot;M&quot;) Or (Sx == &quot;+&quot; and Ini &gt;= &quot;N&quot;)">
+                <then>
+                    <output expression="&quot;Grupo A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Grupo B&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
