@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="programa factorial"/>
+        <attribute name="authors" value="iMile"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 08:52:01 p. m."/>
+        <attribute name="created" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDQtMDc7MDg6MjM6MDcgcC4gbS47MzAwMQ=="/>
+        <attribute name="edited" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDQtMDc7MDk6MDM6MzQgcC4gbS47MTszMTA4"/>
+        <attribute name="edited" value="YWRyaWFuYTtKRVNTRTsyMDI1LTA0LTA4OzA4OjUyOjAxIHAuIG0uOzI7MjY3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, fact" type="Integer" array="False" size=""/>
+            <assign variable="fact" expression="1"/>
+            <output expression="&quot;introduzca un numero entero: &quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="fact" expression="fact*i"/>
+            </for>
+            <output expression="&quot;Su factorial es:&quot;" newline="False"/>
+            <output expression="fact" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

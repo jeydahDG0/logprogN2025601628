@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="reactivo2"/>
+        <attribute name="authors" value="iMile"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 09:01:07 p. m."/>
+        <attribute name="created" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDQtMDc7MDk6MDM6MzkgcC4gbS47MzAwNQ=="/>
+        <attribute name="edited" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDQtMDc7MDk6Mzk6MzAgcC4gbS47MTszMTEz"/>
+        <attribute name="edited" value="YWRyaWFuYTtKRVNTRTsyMDI1LTA0LTA4OzA5OjAxOjA3IHAuIG0uOzI7MjY3Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n1, n2, ns" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="n1" expression="1"/>
+            <assign variable="n2" expression="2"/>
+            <for variable="i" start="1" end="64" direction="inc" step="1">
+                <assign variable="ns" expression="n1+n2"/>
+                <assign variable="n1" expression="n2"/>
+                <assign variable="n2" expression="ns"/>
+                <output expression="ns" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
